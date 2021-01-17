@@ -7,6 +7,8 @@
 - Before walkthrough this repo, I highly recommend taking a glance at my [`Basic web programming`](https://github.com/NhutNguyen236/Web_Program_Application) first
 - There will more description later :smile:
 
+## How to install NodeJS? 
+- Read [this](https://phoenixnap.com/kb/install-node-js-npm-on-windows) for more :smile:
 ## Status
 <p align = "center">
   Updating...
