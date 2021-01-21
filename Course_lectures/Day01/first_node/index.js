@@ -9,7 +9,7 @@ const server = http.createServer((req, res) =>{
         // add charset=utf-8 and plz dun space it like this charset = utf-8, looks nice but doesn't work
         'Content-Type' : 'text/html; charset=utf-8'
     })
-    res.end('heo là để ăn')
+    res.end('This is the the most basic Node website')
 })
 
 // If you dun console.log it out, will receive nothing, OK
