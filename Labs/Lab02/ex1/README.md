@@ -6,8 +6,15 @@
 
 [x] Load HTML page in `main.js`
 
-[] Error handle in different pages
+[x] Error handle in different pages
 
-[] Show result at http://localhost:8080/result.
+[x] Show result at http://localhost:8080/result.
 
-[] Replace all text messages with HTML pages
+[x] Replace all text messages with HTML pages
+
+[x] Do not use `readFile` in here
+
+- :notebook: Code problem - unclear: Need to replace `${query.op}` with a parameter
+```
+return res.end(`Result: ${a} ${query.op} ${b} = ${ketQua}`)
+```
