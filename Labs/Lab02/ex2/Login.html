@@ -14,6 +14,7 @@
     .container{
         max-width: 600px;
         margin: auto;
+        border: 1px solid black;
     }
 
     checkbox{
@@ -27,31 +28,21 @@
 
 </style>
 
-
 <div class="container fluid mt-5">
+    <h1>Login form &#129409;</h1>
+    <!--GET method will pass every name in the form so... see it through-->
     <form action="/result" method="GET">
         <div class="form-group">
-            <label for="message">First operand:</label>
-            <input type="number" class="form-control w-50" id="o1" placeholder="Enter operand 1" name="o2">
+            <label for="email">Email:</label>
+            <input type="text" class="form-control w-50" id="email" placeholder="Enter your email here" name="email">
         </div>
     
         <div class="form-group">
-            <label for="message">Second operand:</label>
-            <input type="number" class="form-control w-50" id="o1" placeholder="Enter operand 2" name="o1">
+            <label for="message">Password:</label>
+            <input type="text" class="form-control w-50" id="pwd" placeholder="Enter your password here" name="pwd">
         </div>
     
-        <div class="form-group">
-            <label for="op">Operator:</label>
-            <select class="form-control w-50" name="op" id="op">
-                <option value="" disabled selected>Select an operand</option>
-                <option value = "+">Sum</option>
-                <option value = "-">Substract</option>
-                <option value = "*">Multiply</option>
-                <option value = "/">Divide</option>
-            </select>
-        </div>
-    
-        <button id="tinhbtn" type="submit" class="mt-4 btn btn-warning">Calculate</button>
+        <button id="tinhbtn" type="submit" class="mt-4 btn btn-warning">Login</button>
     </form>
     
 
