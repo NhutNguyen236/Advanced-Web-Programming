@@ -1,0 +1,30 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous")
+        script(rc="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous")
+        title Exercise01
+    body 
+        div(class="container fluid" style="display: #{vis}")
+            form(method="GET", action="/rectangle")
+                div(class="form-group")
+                    label(for="chieudai") Chiều dài 
+                    input(type="text" class="form-control" name="chieudai")
+                div(class="form-group")
+                    label(for="chieurong") Chiều rộng 
+                    input(type="text" class="form-control" name="chieurong")
+                button(type="submit") Submit
+        .h1 #{warning}
+        
+        - for(var i = 0; i < dai; i++)
+            - var line = '';
+            - for(var j = 0; j < rong; j++)
+                - if(i == 0 || i == dai-1 || j == 0 || j == rong-1)
+                    - line = line + '*' + ' '
+                - else
+                    - line = line + '  '
+            pre.
+                #{line}
