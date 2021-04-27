@@ -1,0 +1,47 @@
+<nav class="light-blue lighten-1" role="navigation">
+  <div class="nav-wrapper container">
+    <a id="logo-container" href="#" class="brand-logo">Authentication</a>
+  </div>
+</nav>
+<div class="section no-pad-bot" id="index-banner">
+  <div class="container">
+    <br><br>
+    <div class="row center">
+      <div class="col s6 offset-s3">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">Login using Node and Passport</span>
+          </div>
+          <div class="card-action">
+						<form class="login-form" action="login" method="post">
+							<div class="row">
+							</div>
+							<div class="row">
+								<div class="input-field col s12">
+									<i class="material-icons prefix">account_circle</i>
+									<input class="validate" id="username" name="username" type="text">
+									<label for="authId" data-error="wrong" data-success="right">Username</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s12">
+									<i class="material-icons prefix">lock_outline</i>
+									<input id="password" type="password">
+									<label for="password">Password</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s12">
+									<button class="btn waves-effect waves-light col s12">Login</button>
+								</div>
+							</div>
+						</form>
+            <a href="/auth/facebook" class="waves-effect waves-light btn social facebook">
+              <i class="fa fa-facebook"></i> Sign in with facebook
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
