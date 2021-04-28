@@ -39,8 +39,9 @@ passport.deserializeUser(function(obj, cb) {
 /*  Google AUTH  */
  
 const GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
-const GOOGLE_CLIENT_ID = 'our-google-client-id';
-const GOOGLE_CLIENT_SECRET = 'our-google-client-secret';
+// Basically, replace these 2 fields with your gg client id and secret key
+const GOOGLE_CLIENT_ID = '673703144887-ld3c04qn29cae5rhj9g9sgvi5p4u3chb.apps.googleusercontent.com';
+const GOOGLE_CLIENT_SECRET = 's4VwwJA8AS8_unxc7kwIvC3H';
 passport.use(new GoogleStrategy({
     clientID: GOOGLE_CLIENT_ID,
     clientSecret: GOOGLE_CLIENT_SECRET,
